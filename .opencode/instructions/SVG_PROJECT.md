@@ -22,7 +22,8 @@ units (archer, knight, etc.), UI/icons (buttons, banners, resource symbols).
 - **Lint/format:** Biome (no ESLint/Prettier). Run via `lint-check` /
   `format-code` custom tools.
 - **Build:** `tsc -p tsconfig.build.json` → `dist/`; the CLI is bundled with
-  `bun build` to `dist/cli/svg-tool.js` as a standalone script.
+  `bun build` to `dist/cli/svg-tool.js` as a standalone script. The MCP server
+  entry is bundled the same way to `dist/mcp/main.js` (Node-runnable ESM).
 
 ## Layout
 
@@ -32,6 +33,7 @@ src/
   assets/     declarative asset definitions (terrain/, buildings/, units/, ui/)
   generator/  AI generator: prompt assembly, LLM client, SVG validation, post-process
   cli/        the `svg-tool` CLI
+  mcp/        the `svg-tool` MCP server — exposes svg_* tools to Claude/Opencode
 tests/        unit + integration tests (mirrors src/ layout)
 svg/          generated SVG output (gitignored except for curated samples)
 ```
@@ -73,6 +75,30 @@ svg/          generated SVG output (gitignored except for curated samples)
 - The generator never writes SVG that the library couldn't also produce — it
   reuses the same primitives and palette names. The LLM is a composer, not a
   raw-markup emitter; the validator enforces this.
+
+## MCP server
+
+- The library + generator are also exposed as MCP tools so any MCP-capable
+  client (Claude Code, Opencode, other bridges) can list, render, validate,
+  and AI-generate SVG tiles from any session that registers the server.
+- Server lives in `src/mcp/`; entry point is `dist/mcp/main.js` (Node-runnable
+  ESM, produced by `bun run bundle:mcp`). Run via
+  `node /home/niko/Projects/SVG_tool/dist/mcp/main.js`.
+- Tools exposed: `svg_list`, `svg_render`, `svg_generate`, `svg_palettes`,
+  `svg_validate`. Schemas and handlers live in `src/mcp/server.ts`. The
+  `svg_generate` tool calls the LLM via the same `OPENAI_BASE_URL` /
+  `OPENAI_API_KEY` / `OPENAI_MODEL` env the CLI's `generate` subcommand uses;
+  per-call overrides (`baseUrl`, `apiKey`, `model`) take precedence.
+- The MCP server imports the library directly (no subprocess), so tool calls
+  are deterministic and type-checked against the same primitives the CLI uses.
+- Tests in `tests/mcp/server.spec.ts` exercise the handlers directly via the
+  exported `toolHandlers` map (no stdio transport spawned). `svg_generate` is
+  stubbed via the `__setGenerateImpl` test seam — never makes a real LLM call
+  in CI.
+- Registration (global pool, machine-wide):
+  - Opencode: `mcp.svg-tool` block in `~/.config/opencode/opencode.jsonc`.
+  - Claude Code: `mcpServers.svg-tool` in `~/.claude/settings.json` (or
+    `claude mcp add svg-tool -- node /home/niko/Projects/SVG_tool/dist/mcp/main.js`).
 
 ## Commit / branch policy
 

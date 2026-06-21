@@ -17,8 +17,9 @@
     "./generator": "./dist/generator/index.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && bun run bundle:cli && bun run bundle:mcp",
     "bundle:cli": "bun build src/cli/svg-tool.ts --outfile dist/cli/svg-tool.js --target node --format esm",
+    "bundle:mcp": "bun build src/mcp/main.ts --outfile dist/mcp/main.js --target node --format esm",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -29,7 +30,10 @@
     "check": "bun run typecheck && bun run lint && bun run test:coverage",
     "cli": "bun run src/cli/svg-tool.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.24.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/node": "^20.11.0",
