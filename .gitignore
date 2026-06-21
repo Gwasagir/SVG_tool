@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# Generated SVG output (keep curated samples in /examples, not /svg)
+svg/
+
+# Editor / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Opencode plugin deps live in .opencode but package files are project-managed
+.opencode/node_modules/
+.opencode/bun.lock

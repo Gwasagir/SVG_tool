@@ -1,0 +1,294 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`seeded assets snapshot > renders buildings/castle at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="#6abe30"/>
+    <rect x="18" y="24" width="64" height="56" fill="#b0b0b0"/>
+    <rect x="18" y="24" width="64" height="4" fill="#7a7a7a"/>
+    <rect x="20" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="28" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="36" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="44" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="52" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="60" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="68" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="76" y="18" width="5" height="6" fill="#9a9a9a"/>
+    <rect x="44" y="58" width="12" height="22" fill="#5a3a1a"/>
+    <polygon points="44,58 56,58 50,50" fill="#5a3a1a"/>
+    <g transform="translate(12,0)">
+      <rect x="0" y="30" width="14" height="50" fill="#6a6a6a"/>
+      <rect x="2" y="38" width="4" height="5" fill="#3d6fb0"/>
+      <rect x="2" y="42" width="4" height="5" fill="#3d6fb0"/>
+      <rect x="2" y="46" width="4" height="5" fill="#3d6fb0"/>
+      <polygon points="0,30 14,30 7,18" fill="#b5422d"/>
+    </g>
+    <g transform="translate(74,0)">
+      <rect x="0" y="30" width="14" height="50" fill="#6a6a6a"/>
+      <rect x="8" y="38" width="4" height="5" fill="#3d6fb0"/>
+      <rect x="8" y="42" width="4" height="5" fill="#3d6fb0"/>
+      <rect x="8" y="46" width="4" height="5" fill="#3d6fb0"/>
+      <polygon points="0,30 14,30 7,18" fill="#b5422d"/>
+    </g>
+    <g transform="translate(50,18)">
+      <rect x="0" y="0" width="1" height="12" fill="#4a4a4a"/>
+      <polygon points="1,1 10,4 1,7" fill="#d9b53d"/>
+    </g>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders buildings/farmland at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="#6abe30"/>
+    <rect x="10" y="18" width="80" height="76" fill="#b8a55a"/>
+    <rect x="12" y="22" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="28" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="34" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="40" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="46" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="52" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="58" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="64" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="70" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="76" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="82" width="76" height="2" fill="#8a7a3a"/>
+    <rect x="12" y="88" width="76" height="2" fill="#8a7a3a"/>
+    <g transform="translate(40,2)">
+      <rect x="0" y="8" width="20" height="12" fill="#9b6b3f"/>
+      <polygon points="0,8 20,8 10,0" fill="#b5422d"/>
+      <rect x="8" y="14" width="4" height="6" fill="#5a3a1a"/>
+    </g>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders buildings/town at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="#6abe30"/>
+    <rect x="10" y="70" width="80" height="20" fill="#c9a86a"/>
+    <g transform="translate(15,50)">
+      <rect x="0" y="14" width="18" height="14" fill="#9b6b3f"/>
+      <polygon points="0,14 18,14 9,4" fill="#b5422d"/>
+      <rect x="6" y="20" width="6" height="8" fill="#5a3a1a"/>
+      <rect x="2" y="16" width="3" height="3" fill="#3d6fb0"/>
+      <rect x="13" y="16" width="3" height="3" fill="#3d6fb0"/>
+    </g>
+    <g transform="translate(45,50)">
+      <rect x="0" y="14" width="18" height="14" fill="#9b6b3f"/>
+      <polygon points="0,14 18,14 9,4" fill="#8a2f1f"/>
+      <rect x="6" y="20" width="6" height="8" fill="#5a3a1a"/>
+      <rect x="2" y="16" width="3" height="3" fill="#3d6fb0"/>
+      <rect x="13" y="16" width="3" height="3" fill="#3d6fb0"/>
+    </g>
+    <g transform="translate(70,50)">
+      <rect x="0" y="14" width="18" height="14" fill="#9b6b3f"/>
+      <polygon points="0,14 18,14 9,4" fill="#b5422d"/>
+      <rect x="6" y="20" width="6" height="8" fill="#5a3a1a"/>
+      <rect x="2" y="16" width="3" height="3" fill="#3d6fb0"/>
+      <rect x="13" y="16" width="3" height="3" fill="#3d6fb0"/>
+    </g>
+    <g transform="translate(30,30)">
+      <rect x="0" y="14" width="18" height="14" fill="#9b6b3f"/>
+      <polygon points="0,14 18,14 9,4" fill="#8a2f1f"/>
+      <rect x="6" y="20" width="6" height="8" fill="#5a3a1a"/>
+      <rect x="2" y="16" width="3" height="3" fill="#3d6fb0"/>
+      <rect x="13" y="16" width="3" height="3" fill="#3d6fb0"/>
+    </g>
+    <g transform="translate(60,30)">
+      <rect x="0" y="14" width="18" height="14" fill="#9b6b3f"/>
+      <polygon points="0,14 18,14 9,4" fill="#b5422d"/>
+      <rect x="6" y="20" width="6" height="8" fill="#5a3a1a"/>
+      <rect x="2" y="16" width="3" height="3" fill="#3d6fb0"/>
+      <rect x="13" y="16" width="3" height="3" fill="#3d6fb0"/>
+    </g>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders terrain/forest at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="#4f8f24"/>
+    <g >
+      <rect x="23" y="38" width="4" height="6" fill="#1b4d1b"/>
+      <circle cx="25" cy="30" r="11" fill="#2d6a2d"/>
+      <circle cx="22" cy="28" r="6" fill="#1b4d1b"/>
+    </g>
+    <g >
+      <rect x="68" y="33" width="4" height="6" fill="#1b4d1b"/>
+      <circle cx="70" cy="25" r="11" fill="#2d6a2d"/>
+      <circle cx="67" cy="23" r="6" fill="#1b4d1b"/>
+    </g>
+    <g >
+      <rect x="48" y="68" width="4" height="6" fill="#1b4d1b"/>
+      <circle cx="50" cy="60" r="11" fill="#2d6a2d"/>
+      <circle cx="47" cy="58" r="6" fill="#1b4d1b"/>
+    </g>
+    <g >
+      <rect x="18" y="83" width="4" height="6" fill="#1b4d1b"/>
+      <circle cx="20" cy="75" r="11" fill="#2d6a2d"/>
+      <circle cx="17" cy="73" r="6" fill="#1b4d1b"/>
+    </g>
+    <g >
+      <rect x="76" y="80" width="4" height="6" fill="#1b4d1b"/>
+      <circle cx="78" cy="72" r="11" fill="#2d6a2d"/>
+      <circle cx="75" cy="70" r="6" fill="#1b4d1b"/>
+    </g>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders terrain/grass at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="#6abe30"/>
+    <polygon points="60.67421100940555,8.2298005791381 59.67421100940555,13.339588738977909 61.67421100940555,13.339588738977909" fill="#4f8f24"/>
+    <polygon points="90.40828126762062,89.34374345000833 89.40828126762062,93.46815746184438 91.40828126762062,93.46815746184438" fill="#4f8f24"/>
+    <polygon points="59.47846429049969,68.54242385551333 58.47846429049969,73.24561166390777 60.47846429049969,73.24561166390777" fill="#4f8f24"/>
+    <polygon points="91.56512743700296,46.24277468211949 90.56512743700296,51.197927951812744 92.56512743700296,51.197927951812744" fill="#4f8f24"/>
+    <polygon points="19.67042100522667,41.914560267701745 18.67042100522667,45.904655853286386 20.67042100522667,45.904655853286386" fill="#4f8f24"/>
+    <polygon points="20.977423334494233,49.088087217882276 19.977423334494233,52.35756675153971 21.977423334494233,52.35756675153971" fill="#4f8f24"/>
+    <polygon points="41.14802255202085,72.43707418069243 40.14802255202085,76.58052087482065 42.14802255202085,76.58052087482065" fill="#4f8f24"/>
+    <polygon points="24.03338058758527,11.589295639656484 23.03338058758527,16.29882346279919 25.03338058758527,16.29882346279919" fill="#4f8f24"/>
+    <polygon points="57.59212944004685,75.08947411365807 56.59212944004685,79.2689535971731 58.59212944004685,79.2689535971731" fill="#4f8f24"/>
+    <polygon points="25.259462079033256,63.282890144735575 24.259462079033256,68.46721959114075 26.259462079033256,68.46721959114075" fill="#4f8f24"/>
+    <polygon points="71.7091986052692,24.19637861661613 70.7091986052692,30.080169543623924 72.7091986052692,30.080169543623924" fill="#4f8f24"/>
+    <polygon points="46.147425370290875,72.71476126555353 45.147425370290875,79.69289727136493 47.147425370290875,79.69289727136493" fill="#4f8f24"/>
+    <polygon points="28.10399914905429,71.5881087007001 27.10399914905429,75.20119246840477 29.10399914905429,75.20119246840477" fill="#4f8f24"/>
+    <polygon points="35.1598560474813,42.70854591112584 34.1598560474813,46.70539654698223 36.1598560474813,46.70539654698223" fill="#4f8f24"/>
+    <polygon points="20.775414841249585,68.99280563555658 19.775414841249585,74.29817143082619 21.775414841249585,74.29817143082619" fill="#4f8f24"/>
+    <polygon points="18.685713249258697,30.231240362860262 17.685713249258697,33.42613422125578 19.685713249258697,33.42613422125578" fill="#4f8f24"/>
+    <polygon points="60.266483443789184,80.72485353890806 59.266483443789184,84.67883036192507 61.266483443789184,84.67883036192507" fill="#4f8f24"/>
+    <polygon points="91.10770898498595,68.33763035479933 90.10770898498595,72.9468219326809 92.10770898498595,72.9468219326809" fill="#4f8f24"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders terrain/mountain at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="#6abe30"/>
+    <polygon points="50,8 88,88 12,88" fill="#8a8a8a"/>
+    <polygon points="50,8 70,50 30,50" fill="#5a5a5a"/>
+    <polygon points="50,8 58,26 42,26" fill="#e8e8e8"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders terrain/road at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="#6abe30"/>
+    <polygon points="35,0 65,0 60,100 40,100" fill="#c9a86a"/>
+    <polygon points="35,0 40,0 37,100 33,100" fill="#9b7d3f" opacity="0.6"/>
+    <polygon points="60,0 65,0 67,100 63,100" fill="#9b7d3f" opacity="0.6"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders terrain/water at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <defs>
+      <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#3d7bd9"/>
+        <stop offset="100%" stop-color="#2a5cb0"/>
+      </linearGradient>
+      <linearGradient id="waterSheen" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="100" height="100" fill="url(#waterGrad)"/>
+    <rect x="0" y="0" width="100" height="100" fill="url(#waterSheen)"/>
+    <polygon points="10,35 40,33 70,36" fill="none" stroke="#6fa8e8" stroke-width="1.5" opacity="0.5"/>
+    <polygon points="15,65 50,63 85,66" fill="none" stroke="#6fa8e8" stroke-width="1.5" opacity="0.4"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders ui/banner at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="48" y="4" width="4" height="30" fill="#4a4a4a"/>
+    <polygon points="52,10 90,16 52,40" fill="#b5422d"/>
+    <polygon points="52,22 82,25 52,32" fill="#d9b53d"/>
+    <circle cx="68" cy="25" r="4" fill="#9a7a1f"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders ui/button at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="6" y="6" width="88" height="88" fill="#7a6a5a"/>
+    <rect x="10" y="10" width="80" height="80" fill="#3a2a1a"/>
+    <rect x="10" y="10" width="80" height="4" fill="#5a4a3a"/>
+    <rect x="10" y="84" width="80" height="6" fill="#5a4a3a"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders ui/coin at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <circle cx="50" cy="50" r="42" fill="#9a7a1f"/>
+    <circle cx="50" cy="50" r="38" fill="#d9b53d"/>
+    <circle cx="50" cy="50" r="32" fill="none" stroke="#9a7a1f" stroke-width="1.5"/>
+    <rect x="48" y="32" width="4" height="36" fill="#9a7a1f"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders units/archer at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="rgba(0,0,0,0)"/>
+    <polygon points="40,40 60,40 64,80 36,80" fill="#4a6a9a"/>
+    <g transform="translate(50,32)">
+      <circle cx="0" cy="0" r="8" fill="#e0c4a0"/>
+      <circle cx="-2" cy="-2" r="3" fill="#a08a6a"/>
+    </g>
+    <path d="M 68 44 Q 80 60 68 76" fill="none" stroke="#8a6a3a" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="68" y1="44" x2="68" y2="76" stroke="#d8d8d8" stroke-width="1"/>
+    <line x1="62" y1="60" x2="30" y2="60" stroke="#6a5a3a" stroke-width="1.5"/>
+    <polygon points="30,60 36,58 36,62" fill="#5a4a3a"/>
+    <line x1="40" y1="44" x2="50" y2="40" stroke="#a08a6a" stroke-width="1.5"/>
+  </g>
+</svg>
+"
+`;
+
+exports[`seeded assets snapshot > renders units/knight at 128px deterministically 1`] = `
+"<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <g >
+    <rect x="0" y="0" width="100" height="100" fill="rgba(0,0,0,0)"/>
+    <polygon points="40,40 60,40 62,82 38,82" fill="#9a9a9a"/>
+    <polygon points="40,40 60,40 58,50 42,50" fill="#6a6a6a"/>
+    <g transform="translate(50,30)">
+      <circle cx="0" cy="0" r="9" fill="#9a9a9a"/>
+      <rect x="-9" y="-2" width="18" height="4" fill="#6a6a6a"/>
+      <rect x="-2" y="2" width="4" height="5" fill="#6a6a6a"/>
+    </g>
+    <polygon points="28,50 40,50 38,72 30,72" fill="#7a3a2a"/>
+    <polygon points="30,54 38,54 37,70 31,70" fill="#d9b53d"/>
+    <line x1="64" y1="44" x2="78" y2="20" stroke="#c0c0c0" stroke-width="2.5"/>
+    <line x1="60" y1="44" x2="68" y2="40" stroke="#5a4a3a" stroke-width="2"/>
+  </g>
+</svg>
+"
+`;
