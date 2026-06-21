@@ -4,9 +4,9 @@ Loaded eagerly (auto) every session, on top of the global config.
 
 ## Runtime
 
-- **Model** `local/qwen3-35b-a3b` on `http://localhost:8080`. Verify:
-  `curl -s localhost:8080/v1/models | jq .data[].id` must match the `model` key
-  in `.opencode/opencode.jsonc` — mismatch silently falls back or errors.
+- **Model** is whatever the global `~/.config/opencode/opencode.jsonc` declares
+  (this project does not override providers/models). Check the global config
+  for the active `model` key and the local server it points at.
 - **Hooks** `ECC_HOOK_PROFILE=minimal|standard|strict` (default `minimal`).
   Tool-execution behavior may vary between sessions — check the env if
   something fires you didn't expect.

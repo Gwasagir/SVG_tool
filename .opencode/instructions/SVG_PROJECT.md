@@ -64,12 +64,12 @@ svg/          generated SVG output (gitignored except for curated samples)
 - Input: a free-text prompt + optional `{ size, category, seed, palette }`.
 - Output: one SVG string written to `svg/<category>/<name>-<size>.svg`.
 - Flow: prompt → build a constrained system prompt (lists allowed primitives,
-  palettes, the target category's conventions) → call the configured LLM (local
-  qwen via OpenAI-compatible API at `localhost:8080/v1` by default, or any
-  `OPENAI_BASE_URL`/`OPENAI_API_KEY`) → strip markdown fences → validate with
-  the same validator the library uses → if invalid, one retry with the
-  validation errors quoted back → post-process (strip comments, set the final
-  `width`/`height`/`viewBox`, normalize whitespace) → write.
+  palettes, the target category's conventions) → call the configured LLM (any
+  OpenAI-compatible endpoint via `OPENAI_BASE_URL`/`OPENAI_API_KEY`) → strip
+  markdown fences → validate with the same validator the library uses → if
+  invalid, one retry with the validation errors quoted back → post-process
+  (strip comments, set the final `width`/`height`/`viewBox`, normalize
+  whitespace) → write.
 - The generator never writes SVG that the library couldn't also produce — it
   reuses the same primitives and palette names. The LLM is a composer, not a
   raw-markup emitter; the validator enforces this.
